@@ -16,6 +16,7 @@ body {
 }
 
 h1 {
+  text-align: center;
   font-size: 32px;
   color: #3f3f3f;
 }
@@ -56,6 +57,34 @@ h1 {
 .panel.active h3 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s; /* 0.4s delay */
+}
+
+/* back-key */
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.back-key {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 1.25em;
+  color: #000;
+  background-color: #d7c378;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.back-key:hover {
+  color: #404040;
 }
 
 @media(max-width: 480px) {

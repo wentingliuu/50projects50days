@@ -24,7 +24,7 @@ body {
   text-align: center;
   font-weight: 700;
   font-style: italic;
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .container {
@@ -40,7 +40,7 @@ body {
 
 .row > div {
   padding: 0;
-  height: 200px;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,19 +80,22 @@ body {
 
 img {
   opacity: 0.15;
-  height: 100%;
+  width: 100%;
   object-fit: contain;
   object-position: center;
 }
 
 a,
 a:hover {
-  position: relative;
   text-decoration: none;
   color: inherit;
 }
 
-a div {
+.card-link {
+  position: relative;
+}
+
+.card-link div {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -105,12 +108,116 @@ a div {
   font-style: italic;
 }
 
-a:hover div {
+.card-link:hover div {
   visibility: hidden;
   transition: visibility 0.5s ease-in;
 }
 
-a:hover img {
+.card-link:hover img {
   opacity: 1;
   transition: opacity 0.5s ease-in;
+}
+
+.info-key {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-size: 1.25em;
+  color: #000;
+  background-color: #d7c378;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.info-key:hover {
+  color: #404040;
+}
+
+/* popup message */
+#popup {
+  position: fixed;
+  top: 35%;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+
+  background: #090909ee;
+  width: 75%;
+  height: 40%;
+  border-radius: 5px;
+
+  transition: all 0.5s ease-in-out;
+}
+
+#popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+#popup h3 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  line-height: 30px;
+}
+#popup .close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: calc(1.3rem + .6vw);
+  line-height: 30px;
+  color: #fff;
+}
+#popup .close:hover {
+  color: #d7c378;
+}
+#popup .content {
+  width: 80%;
+  overflow: auto;
+  position: absolute;
+  top: 80px;
+  left: 30px;
+}
+
+#popup .content a:hover {
+  color: #d7c378;
+}
+
+#popup .contact {
+  width: 80%;
+  overflow: auto;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
+
+#popup .contact a:hover {
+  color: #d7c378;
+}
+
+@media(min-width: 576px) {
+  #popup {
+    width: 60%;
+    height: 35%;
+  }
+}
+
+@media(min-width: 768px) {
+  #popup {
+    width: 50%;
+  }
+}
+
+@media(min-width: 992px) {
+  #popup {
+    width: 35%;
+    height: 30%;
+  }
 }
