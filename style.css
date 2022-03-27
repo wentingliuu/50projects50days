@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  animation-timing-function: linear;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Noto Sans TC', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #fff;
+  background-color: #090909ff;
+}
+
+.title {
+  position: sticky;
+  top: 25px;
+  margin: 0 20px;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 5em;
+}
+
+.container {
+  height: calc(100vh - 25px);
+  min-width: 320px;
+  margin-top: 40px;
+  overflow: scroll;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.row > div {
+  padding: 0;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.row > div:nth-of-type(1),
+.row > div:nth-of-type(6) {
+  background-color: #eceff0ff;
+  color: #112040ff;
+}
+
+.row > div:nth-of-type(2),
+.row > div:nth-of-type(7) {
+  background-color: #b2c6d4ff;
+  color: #112040ff;
+}
+
+.row > div:nth-of-type(3),
+.row > div:nth-of-type(8) {
+  background-color: #086190ff;
+  color: #fff;
+}
+
+.row > div:nth-of-type(4),
+.row > div:nth-of-type(9) {
+  background-color: #112040ff;
+  color: #fff;
+}
+
+.row > div:nth-of-type(5),
+.row > div:nth-of-type(10) {
+  background-color: #3c3c3cff;
+  color: #fff;
+}
+
+img {
+  opacity: 0.15;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+a,
+a:hover {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+a div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+a:hover div {
+  visibility: hidden;
+  transition: visibility 0.5s ease-in;
+}
+
+a:hover img {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}

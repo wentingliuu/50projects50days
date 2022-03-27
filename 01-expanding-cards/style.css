@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Courgette', cursive;
+  font-family: 'Lobster', cursive;
   display: flex;
   flex-direction: column;
   justify-content: center;
