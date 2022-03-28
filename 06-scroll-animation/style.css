@@ -97,10 +97,13 @@ a:hover {
   color: #000;
   background-color: #d7c378;
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in;
 }
 
 .back-key:hover {
   color: #f9f3e0;
+  transform: translateX(10%);
+  transition: all 0.3s ease-in;
 }
 
 @media(min-width: 576px) {

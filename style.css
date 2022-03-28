@@ -140,6 +140,7 @@ a:hover {
 
 .card-link:hover img {
   opacity: 1;
+  transform: scale(1.1);
 }
 
 /* theme button */
@@ -163,6 +164,7 @@ a:hover {
 .theme-btn:hover {
   color: #f9f3e0;
   transition: all 0.1s ease-in;
+  transform: translateX(10%);
 }
 
 /* info key */
@@ -186,6 +188,7 @@ a:hover {
 .info-key:hover {
   color: #f9f3e0;
   transition: all 0.1s ease-in;
+  transform: translateX(10%);
 }
 
 /* popup message */
