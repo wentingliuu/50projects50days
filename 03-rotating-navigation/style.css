@@ -119,7 +119,6 @@ nav ul li + li + li {
   line-height: 1.5;
 }
 
-
 /* back-key */
 a,
 a:hover {
@@ -135,8 +134,8 @@ a:hover {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   font-size: 1em;
   color: #000;
@@ -145,7 +144,7 @@ a:hover {
 }
 
 .back-key:hover {
-  color: #404040;
+  color: #f9f3e0;
 }
 
 @media(min-width: 576px) {
