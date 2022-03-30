@@ -108,12 +108,17 @@ h1 {
 .hover-left .left {
   width: var(--hover-width);
 }
-
+.hover-left .split.left::before {
+  background-color: transparent;
+}
 .hover-left .right {
   width: var(--over-width);
 }
 .hover-right .right {
   width: var(--hover-width);
+}
+.hover-right .split.right::before {
+  background-color: transparent;
 }
 .hover-right .left {
   width: var(--over-width);
@@ -166,7 +171,7 @@ a:hover {
     top: 30%;
   }
   .btn {
-    width: 12rem;
-    padding: 1.2rem;
+    width: 10rem;
+    padding: 1rem;
   }
 }
