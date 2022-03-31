@@ -14,17 +14,14 @@ items.forEach(item => {
   btn.innerText = item.sound
   btn.style.backgroundColor = item.color
 
-  btn.addEventListener('mouseenter', () => {
-    document.getElementById(item.sound).play()
-  })
-  btn.addEventListener('touchstart', () => {
+  btn.addEventListener('click', () => {
+    stopSounds()
     document.getElementById(item.sound).play()
   })
 
   document.getElementById('buttons').appendChild(btn)
 })
 
-/*
 function stopSounds() {
   items.forEach(item => {
     const sound = document.getElementById(item.sound)
@@ -32,4 +29,3 @@ function stopSounds() {
     sound.currentTime = 0
   })
 }
-*/
