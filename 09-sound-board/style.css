@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2C3E50;
+  font-family: 'Permanent Marker', cursive;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh ;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+h2 {
+  color: #fff;
+}
+
+.btn {
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  margin: 1rem;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.2rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.85;
+  transform: scale(0.95);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* back-key */
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.back-key {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 1em;
+  color: #000;
+  background-color: #d7c378;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in;
+}
+
+.back-key:hover {
+  color: #f9f3e0;
+  transform: translateX(10%);
+  transition: all 0.3s ease-in;
+}
+
+@media(min-width: 576px) {
+  .back-key {
+    right: 50px;
+    bottom: 35px;
+    height: 50px;
+    width: 50px;
+    font-size: 1.25em;
+  }
+}
+
+@media(max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+  .btn {
+    width: 10rem;
+    padding: 1rem;
+  }
+}
