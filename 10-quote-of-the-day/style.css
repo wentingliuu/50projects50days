@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Permanent Marker', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh ;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.container {
+  color: #000;
+  background-color: #ffffff60;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 50px 20px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  margin: 0;
+  opacity: 0.5;
+  letter-spacing: 2px;
+}
+
+.text {
+  font-size: 1.5em;
+  line-height: 1.25em;
+}
+
+.author {
+  font-size: 1.15em;
+  margin-top: 0.25em;
+}
+
+.quote {
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin: 50px auto;
+  max-width: 950px;
+}
+
+.btn {
+  color: #fff;
+  background-color: #00000080;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px 40px;
+  font-size: 0.85em;
+  cursor: pointer;
+  font-family: inherit;
+}
+.btn:focus {
+  outline: 0;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+/* back-key */
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.back-key {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 1em;
+  color: #000;
+  background-color: #d7c378;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in;
+}
+
+.back-key:hover {
+  color: #f9f3e0;
+  transform: translateX(10%);
+  transition: all 0.3s ease-in;
+}
+
+@media(min-width: 576px) {
+  .back-key {
+    right: 50px;
+    bottom: 35px;
+    height: 50px;
+    width: 50px;
+    font-size: 1.25em;
+  }
+}
+
+@media(max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+  .btn {
+    width: 10rem;
+    padding: 1rem;
+  }
+}
