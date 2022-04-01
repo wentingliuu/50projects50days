@@ -81,14 +81,3 @@ a:hover {
     font-size: 1.25em;
   }
 }
-
-@media(max-width: 800px) {
-  h1 {
-    font-size: 2rem;
-    top: 30%;
-  }
-  .btn {
-    width: 10rem;
-    padding: 1rem;
-  }
-}
