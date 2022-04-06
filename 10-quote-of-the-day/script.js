@@ -42,7 +42,7 @@ switch (new Date().getMonth()) {
 title.innerText = `Quote of ${month} ${date}`
 
 /* get background image */
-async function changeBackground() {
+async function changeBackground () {
   const image = new Image()
 
   image.onload = function () {
@@ -64,7 +64,7 @@ changeBackground()
 const text = document.querySelector('.text')
 const author = document.querySelector('.author')
 
-async function generateQuote() {
+async function generateQuote () {
   const response = await fetch('https://type.fit/api/quotes')
   const quotes = await response.json()
   const num = Math.floor(Math.random() * quotes.length)

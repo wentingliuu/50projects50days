@@ -3,15 +3,15 @@ const bg = document.querySelector('.bg')
 const progress = document.querySelector('.progress')
 const progressValue = document.querySelector('.progress-value')
 
-const scale = (num, in_min, in_max, out_min, out_max) => {
-  return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min
+const scale = (num, inMin, inMax, outMin, outMax) => {
+  return (num - inMin) * (outMax - outMin) / (inMax - inMin) + outMin
 }
 
 let load = 0
 
-let int = setInterval(counting, 30)
+const int = setInterval(counting, 30)
 
-function counting() {
+function counting () {
   load++
 
   if (load > 99) {

@@ -17,7 +17,7 @@
 body {
   font-family: 'Lobster', cursive;
   height: 100vh ;
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 0;
 }
 

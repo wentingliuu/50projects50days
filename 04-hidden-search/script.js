@@ -8,4 +8,3 @@ btn.addEventListener('click', () => {
   title.classList.toggle('active')
   input.focus()
 })
-

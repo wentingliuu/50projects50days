@@ -3,7 +3,7 @@ const title = document.querySelector('.title')
 const container = document.querySelector('.container')
 
 container.addEventListener('scroll', () => {
-  const fontSize = 90 - Number(container.scrollTop)/20
+  const fontSize = 90 - Number(container.scrollTop) / 20
   title.style.fontSize = `clamp(1.5em, ${fontSize}px, 4em)`
 })
 
@@ -37,19 +37,19 @@ themeBtn.addEventListener('click', () => {
 })
 
 // detect browser theme mode to chang favicon style
-matcher = window.matchMedia('(prefers-color-scheme: dark)');
-matcher.addListener(onUpdate);
-onUpdate();
+const matcher = window.matchMedia('(prefers-color-scheme: dark)')
+matcher.addListener(onUpdate)
+onUpdate()
 
-lightSchemeIcon = document.querySelector('link#light-scheme-icon');
-darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+const lightSchemeIcon = document.querySelector('link#light-scheme-icon')
+const darkSchemeIcon = document.querySelector('link#dark-scheme-icon')
 
-function onUpdate() {
+function onUpdate () {
   if (matcher.matches) {
-    lightSchemeIcon.remove();
-    document.head.append(darkSchemeIcon);
+    lightSchemeIcon.remove()
+    document.head.append(darkSchemeIcon)
   } else {
-    document.head.append(lightSchemeIcon);
-    darkSchemeIcon.remove();
+    document.head.append(lightSchemeIcon)
+    darkSchemeIcon.remove()
   }
 }
