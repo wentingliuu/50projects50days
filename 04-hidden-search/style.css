@@ -78,6 +78,13 @@ body {
   transform: translateX(200px);
 }
 
+.btn,
+.input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 /* back-key */
 a,
 a:hover {
