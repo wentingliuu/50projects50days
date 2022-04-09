@@ -95,11 +95,7 @@ h1 {
   right: 30px;
   height: 30px;
   width: 30px;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  color: black;
+  color: #000;
 }
 
 .faq-toggle:focus {
@@ -108,6 +104,7 @@ h1 {
 
 .faq-toggle .fa-times {
   display: none;
+  color: #000;
 }
 
 .faq.active .faq-toggle .fa-times {
@@ -116,12 +113,14 @@ h1 {
 
 .faq.active .faq-toggle .fa-chevron-down {
   display: none;
+  color: #000;
 }
 
 button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  color: #000;
 }
 
 /* back-key */
