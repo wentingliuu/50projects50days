@@ -95,6 +95,11 @@ h1 {
   right: 30px;
   height: 30px;
   width: 30px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: black;
 }
 
 .faq-toggle:focus {
