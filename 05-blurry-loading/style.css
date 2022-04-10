@@ -16,7 +16,7 @@ body {
 }
 
 .bg {
-  background: url('./../image/05-01.jpg') no-repeat center center/cover;
+  background: url('./../image/05-bg.jpg') no-repeat center center/cover;
   position: absolute;
   top: -30px;
   left: -30px;
