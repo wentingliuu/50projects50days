@@ -12,6 +12,7 @@ textarea.addEventListener('keyup', (e) => {
     setTimeout(() => {
       e.target.value = ''
     }, 10)
+    textarea.inputMode = 'none'
     randomSelect()
   }
 })
@@ -50,6 +51,7 @@ function randomSelect () {
 
 function pickRandomTag () {
   const tags = document.querySelectorAll('.tag')
+  textarea.inputMode = 'text'
   return tags[Math.floor(Math.random() * tags.length)]
 }
 
