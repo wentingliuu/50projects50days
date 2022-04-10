@@ -47,11 +47,15 @@ function randomSelect () {
       highlightTag(randomTag)
     }, 100)
   }, times * 100)
+
+  setTimeout(() => {
+    console.log('input mode text')
+    textarea.inputMode = 'text'
+  }, times * 150)
 }
 
 function pickRandomTag () {
   const tags = document.querySelectorAll('.tag')
-  textarea.inputMode = 'text'
   return tags[Math.floor(Math.random() * tags.length)]
 }
 
