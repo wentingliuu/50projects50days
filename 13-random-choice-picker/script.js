@@ -49,7 +49,6 @@ function randomSelect () {
   }, times * 100)
 
   setTimeout(() => {
-    console.log('input mode text')
     textarea.inputMode = 'text'
   }, times * 150)
 }
