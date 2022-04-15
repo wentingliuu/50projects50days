@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+:root {
+  --border-color: #00008B;
+  --fill-color: #1E90FF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4169E1;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin: 25px 0 0;
+}
+
+h3 {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.cup {
+  background-color: #fff;
+  border: 3px solid var(--border-color);
+  color: var(--border-color);
+  border-radius: 0 0 40px 40px;
+  height: 240px;
+  width: 150px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.remained {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+.remained span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.remained small {
+  font-size: 12px;
+}
+.percentage {
+  background-color: var(--fill-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  height: 0;
+  transition: 0.3s ease;
+}
+.text {
+  text-align: center;
+  margin: 10px 0 25px;
+  font-size: 12px;
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+}
+
+.cup.cup-small {
+  width: 50px;
+  height: 95px;
+  border: 2px solid var(--border-color);
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+.cup.cup-small.full {
+  background-color: var(--fill-color);
+  color: #fff;
+}
+
+/* back-key */
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.back-key {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 1em;
+  color: #000;
+  background-color: #d7c378;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in;
+}
+
+.back-key:hover {
+  color: #f9f3e0;
+  transform: translateX(10%);
+  transition: all 0.3s ease-in;
+}
+
+@media(min-width: 576px) {
+  .back-key {
+    right: 50px;
+    bottom: 35px;
+    height: 50px;
+    width: 50px;
+    font-size: 1.25em;
+  }
+  h1 {
+    margin: 50px 0 0;
+  }
+  .cup {
+    height: 330px;
+    width: 180px;
+  }
+  .remained span {
+    font-size: 20px;
+  }
+  .remained small {
+    font-size: 12px;
+  }
+  .percentage {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 16px;
+  }
+}
