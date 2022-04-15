@@ -3,7 +3,7 @@ const liters = document.getElementById('liters')
 const percentage = document.getElementById('percentage')
 const remained = document.getElementById('remained')
 
-const bigCupHeight = document.querySelectorAll('.cup')[0].offsetHeight
+const bigCupHeight = document.querySelectorAll('.cup')[0].clientHeight
 
 updateBigCup()
 
