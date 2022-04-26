@@ -7,7 +7,7 @@ const form = document.getElementById('form')
 const search = document.getElementById('search')
 
 // Get initial movies
-async function getMovies(url) {
+async function getMovies (url) {
   const res = await fetch(url)
   const data = await res.json()
   showMovies(data.results)
@@ -15,7 +15,7 @@ async function getMovies(url) {
 
 getMovies(API_URL)
 
-function showMovies(movies) {
+function showMovies (movies) {
   main.innerHTML = ''
 
   movies.forEach(movie => {
@@ -37,7 +37,7 @@ function showMovies(movies) {
   })
 }
 
-function getClassByRate(vote) {
+function getClassByRate (vote) {
   if (vote >= 8) return 'green'
   if (vote >= 5) return 'orange'
   return 'red'
@@ -47,7 +47,7 @@ function getClassByRate(vote) {
 form.addEventListener('submit', (e) => {
   e.preventDefault()
   const searchTerm = search.value
-  if(searchTerm && searchTerm !== '') {
+  if (searchTerm && searchTerm !== '') {
     getMovies(`${SEARCH_API}"${searchTerm}"`)
     search.value = ''
   } else {

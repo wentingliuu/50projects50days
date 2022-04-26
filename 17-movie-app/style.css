@@ -117,6 +117,7 @@ main {
 
 .movie:hover .overview {
   transform: translateY(0);
+  overflow: scroll;
 }
 
 /* back-key */
